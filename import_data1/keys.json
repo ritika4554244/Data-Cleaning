@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "infosysproject-376206",
+  "private_key_id": "fc807f20aa7903322986c075bedf9ead04be5bfe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvZCEMVsUAaiVk\nw11HDU0oLSU6qNgUPO+tmJFv6khfFWiJFnRyreFPriVCjfuWf22c+kgb+rWQP40V\nk/ANs9+9xIzh6U6GP9OQyroS7h1ZY54LtAT+owQFhBbRQG+QxrzyrDH2wygNu8Up\ngfAKG74AXTU+5URnwUWXrUtIFbVUadWRobroIEX2jLOacIFHEcieRtrGo2PZ/4mE\nbUoAW0jhPj7lw434zzavZH3tStMQNpoy4d3vcicCdqJP4VwCDGlLtB9na5DuOIpe\nwIz+U0GBih0J1B+TrZ8sJTPdC+YuoP5rN7nNgwLmVzx2oGwlMAxcL8Ey5du/qV2I\nE4+s4PcHAgMBAAECggEAKZVByJ0h4/FGoFc5XEkpC+d4Niol4NZ5tNzBTplrQy/e\nMvJh9XaIPs35A4iKJ6paoKcuRYPxXBvVJVKHzZfh6ioZhM490dJ8JI4MA8T0rGbT\n585siLq5j10706zFRrv3vElbJzgp3Oex3R9ze9IMACYZI6pTx42pJEbv3E1ZSoPP\npRn/5D1sisc7463Zdr9jL1dR6hw476eRur3rS9691r0VlpeTGemCPZAdZ1Xd6sK8\nemUBTl7sGkyAVdsGdPLphp/9LXeWDTZ5adzCXjyDqnuMXvvhGn8aRWCEkWG/OgYv\n+bY/HRhmFdWnAawQPhpcMDu47R0jONNWSAypAIQ3AQKBgQD0Esl/ul5p5DssOC3y\nLzQ/h/oS8OEuEc4FA8c/RF6Pec2wag9ZpOqpuwiogSq3jiFxD8od6Jg2+rcp5xte\nEIW62K4MvQ8GYuwLpWY9Yl562Mva8bsoF8ynkDwXIY15wgmamBoUG10Mnu8zcZh6\nSD4gSsmY9azZcuLss4d2NHuJQQKBgQC39ir0uXuYH04XRJM0kNDy+ywrwNUKhMyh\nXObsOYgdH7BpQN3LUd9oXFkEUkVBjocNs+xKw0Oa7e/dmO0ROHK0fK++SSRd6ihN\n0YlLxTrVG8G8qjNCtLd3+uWN7CAB7cVTBWVm5rbDqWAc7vgH1sXtV+I7u46+QXau\nEHAB7G5mRwKBgQC+I7Cj9507oxhR74YjqJBsedLgVJUn3akAkRv0dp+v6DTMHSPO\nM0K4bUNmehG8I1Z8DM/pEt0Z36E3XJoeYoK7t7eHpvUAhanbvMN0SKDP1PqimzSx\nHDFLzHpzjqj3VKlErP+L8HFBtsMj8XfWs1bqszhwF9vLHswXmBiMhoBCwQKBgEfz\nl4+KcKXqMJ/3KWBY9/DhfsBKNslbcbH3ZTaltfA2McipH1bj2e62l/aRuxbOCVK5\nucTwJKQXRkc1BhxDKNIhJpfVgczdxg/R0dJ5/O3XYmpJY61Gg7AAyQI+hbJbbl9v\nb97UhE15FOecLBTc0yNmyUy1qjoN3r5sHXMTJ4cHAoGBALsEOG3sFj68dkC2i9Sl\nenkvcGTeXTKXGfyf+2Zh3KKW4PBeOLzOQ9NSOIz/1wGEhtf/YgM4Yf347IEyaNga\nHXi/XqqpYUusKBgCRPOOUqHJ4DsblKVnIpOdGjWPS9pjjqqc1XRRj9cSWglYT033\neti5+ASNDcSBU862nWcXgkCq\n-----END PRIVATE KEY-----\n",
+  "client_email": "infosysprogr1@infosysproject-376206.iam.gserviceaccount.com",
+  "client_id": "108396447508838171444",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/infosysprogr1%40infosysproject-376206.iam.gserviceaccount.com"
+}

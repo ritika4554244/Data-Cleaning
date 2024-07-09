@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta data-name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <!--{% load static %}-->
+    <link rel="stylesheet" href="/static/css/stylesheet.css"/>
+
+    <title>INFY DATAQ PROJECT</title>
+    <style>
+        body { 
+ background-color: #4b878e;
+ background-image: rgb(183, 50, 72);
+ background-size: cover;
+ opacity: 1
+        }
+        p.title{
+
+            background-color: white;
+            margin: 50px;
+            right: 50px;
+            padding: 50px;
+        }
+
+        
+        
+        
+        </style>
+</style>
+</head>
+
+<body>
+  <div class='topbar'>
+      <button class="button" 
+          onclick="window.location.href = 'website.html';">
+              
+      </button>
+      <div class="dropdown"> 
+        <button class="dropbtn">HOME</button>
+        <div class="dropdown-content">
+            <a href="/">Home Page</a>
+        </div>
+  
+    </div>
+  
+      <div class="dropdown">
+          <button class="dropbtn">IMPORT DATA</button>
+          <div class="dropdown-content">
+            <a href="http://127.0.0.1:8000/csv_dataset/">CSV here</a>
+            <a href="http://127.0.0.1:8000/excel_dataset/">Excel</a>
+            <a href="http://127.0.0.1:8000/googlesheets_dataset/">Google Sheets</a>
+            <a href="http://127.0.0.1:8000/database_dataset/">MySQL</a>
+        </div>
+      </div>
+      <div class="dropdown"> 
+        <button class="dropbtn" >VALIDATE DATA</button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/validation/">Validate</a>
+         
+        </div>
+      </div>
+      <div class="dropdown"> 
+        <button class="dropbtn" >MASKING </button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/view_data/">mask data</a>
+        </div> 
+      </div>
+      <div class="dropdown"> 
+        <button class="dropbtn" >Export</button>
+        <div class="dropdown-content">
+          <a href="http://127.0.0.1:8000/Clean_data/"></a>
+         
+        </div> 
+    
+        
+    </div>
+    
+  
+      <button class="button" 
+          onclick="window.location.href = 'about.html';">
+              ABOUT
+    </button>
+  </div>
+  
+       
+  <p class="title">
+    <br><b>UPLOADER(MESSY TO CLEAN DATA)</b></br>
+    <br> <b>Django 2.1 / Python 3.7</b></br>
+    <br></br>
+    Reading data from a cluster table and downloading the same to a file using FM GUI_DOWNLOAD. 
+    Unfortunately one of the fields is of type RAW(1) and this causes the data to show up in the flat file as
+    When I debyug the program the field displays value '04'. Is it possible to convert the raw data and get 
+    some meaningful data into this flat file. 
+    <br></br>
+    <br><b>Thanks and Regards</b> </br>
+    </p>
+
+  </p>
+       <h3 class="description"></h3>
+  </body>
+  </html>

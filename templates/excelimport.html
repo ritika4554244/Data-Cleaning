@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta data-name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    {% load static %}
+    {% load static %}
+    <style>
+                body { 
+        background-color: rgb(211, 213, 188);
+        background-size: cover;
+        opacity: 1
+        }
+
+        .headerh1{
+        font-size: 35px;
+        font-family: 'Ultra', sans-serif;  
+        text-align: center;
+        font-weight: 600;
+        text-shadow: 0px 4px 10px rgba(179, 147, 211, 0.8);
+        color:white;
+        }
+
+        .topbar {
+        background-color: rgb(214, 166, 32);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        position: relative;
+        }
+        .button {
+        background-color: transparent;
+        color: black;
+        padding: 15px 32px;
+        font-size: 16px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        margin-top: 18px;
+        margin-bottom: 4px;
+        }
+
+        /* Dropdown Button */
+        .dropbtn {
+        background-color: transparent;
+        color: black;
+        padding: 15px 32px;
+        font-size: 16px;
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        display: flex;
+        position: relative;
+        margin-top: 18px;
+        margin-bottom: 4px;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {background-color:#ADD8E6;} 
+
+        .bg {
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: repeat-x;
+        }
+
+        .container{
+            position: relative;
+            min-height: 100vh;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .container .search-box{
+            position: relative;
+            height: 30px;
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        .search-box input{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            background-color: #000000;
+            padding: 0 15px 45 30px;
+            color: #fff5f5;
+            border-radius: 20px;
+        }
+        .search-box i{
+            position: absolute;
+            z-index: 2;
+            color: #000000;
+            top: 50%;
+            left: 15px;
+            font-size: 100px;
+            transform: translateY(-50%);
+        }
+        .search-box input{
+         text-align: center;
+
+
+        }
+        
+    </style>
+
+    <title>INFY DATAQ PROJECT</title> 
+</head>
+
+<body>
+<div class='topbar'>
+    <button class="button" 
+	    	onclick="window.location.href = 'website.html';">
+	      	  HOME PAGE
+		</button>
+
+    <div class="dropdown">
+        <button class="dropbtn">IMPORT DATA</button>
+        <div class="dropdown-content">
+            <a href="http://127.0.0.1:8000/csv_dataset/">CSV here</a>
+            <a href="http://127.0.0.1:8000/excel_dataset/">Excel</a>
+            <a href="http://127.0.0.1:8000/googlesheets_dataset/">Google Sheets</a>
+            <a href="http://127.0.0.1:8000/database_dataset/">MySQL</a>
+        </div>
+    </div>
+
+    <button class="button" 
+	    	onclick="window.location.href = 'about.html';">
+	      	  ABOUT
+	</button>
+</div>
+
+    </head>
+    <header class='headerh1'>
+	
+    </header>
+       <div class="container">
+        <div class="search-box">
+            <h1>IMPORT EXCEL FILE</h1>
+            <form action="/excel_imported/" method="POST">{% csrf_token %}
+                <label for="search">Search:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Search for data set"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        upload files
+    </title>
+</head>
+<body>
+  <h2>Upload</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{context}}
+    <input type="file" name="document">
+    <button type="submit">Upload file</button>
+  </form>
+  {% if url %}
+  {% if file %}
+  <script type="text/javascript">
+    window.open('http://127.0.0.1:8000/validation/','_self');
+    </script>
+    {% else %}
+    <script type="text/javascript">
+        window.open('http://127.0.0.1:8000/cleaning/','_self');
+        </script>
+  {% endif %}
+  {% endif %}
+
+</body>
+</html>

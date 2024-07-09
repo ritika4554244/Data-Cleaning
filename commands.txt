@@ -1,0 +1,31 @@
+commands:
+python manage.py runserver
+python manage.py makemigration
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py migrate --database=users
+python manage.pt startapp appname
+
+
+Sql password:Harikrishna1.
+
+to activate the environment we use : pipenv shell
+to deactivate the environment we use : exit
+
+
+my django database
+username:kommaddiharikrishna
+email:kommaddi.hari.nani@gmail.com
+password:Harikrishna1.
+
+
+
+
+"users": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": "infosy_project",
+        "USER":"root",
+        "PASSWORD":"Harikrishna1.",
+        "PORT":3306,
+        "HOST":"127.0.0.1",
+    }

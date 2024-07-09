@@ -1,0 +1,9 @@
+{
+    
+    "Age":
+    {
+        "columns":"all",
+        "method":"mean",
+        "data_type":"int"
+    }
+}

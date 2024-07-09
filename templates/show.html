@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>home page</title>
+        <!-- the following style code is include from W3Schools-->
+        <link rel="stylesheet" href="/static/css/stylesheet.css"/>
+        <style>
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            th, td {
+              text-align: left;
+              padding: 8px;
+            }
+            
+            tr:nth-child(even) {background-color: #f2f2f2;}
+            .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+            </style>
+    </head>
+    <body>
+        <div class='topbar'>
+            <button class="button" 
+                onclick="window.location.href = '/upload/';" title="upload the files name called cleaning.json
+                 for cleaning and for validation upload sample.json">
+                    UPLOAD
+            </button>
+        
+        </div>
+        <!--<h1>this is your imported data</h1>-->
+        <!--'PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
+       'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'-->
+       {{my_data}}
+        <ul>
+            <table class="center">
+                <tr>
+                    {%for i in cols%}
+                    <th>{{i}}</th>
+                    {%endfor%}
+                </tr>
+            {%for i in data%}
+            <tr>
+                {%for j in i%}
+                <td>{{j}}</td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+            </table>
+        </ul>
+    </body>
+</html>

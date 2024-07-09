@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>home page</title>
+        <!-- the following style code is include from W3Schools-->
+        <link rel="stylesheet" href="/static/css/stylesheet.css"/>
+        <style>
+            table {
+              border-collapse: collapse;
+              width: 100%;
+            }
+            
+            th, td {
+              text-align: left;
+              padding: 8px;
+            }
+            
+            
+            .yes{background-color: #52e0d6;}
+            .no{background-color: #eb703f;}
+            tr.yes:hover {background-color: #D6EEEE;}
+            tr.no:hover {background-color: #601c08;}
+            .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+            </style>
+    </head>
+    <body>
+        <h1>this is your imported data</h1>
+        <!--'PassengerId', 'Survived', 'Pclass', 'Name', 'Sex', 'Age', 'SibSp',
+       'Parch', 'Ticket', 'Fare', 'Cabin', 'Embarked'-->
+       <div class='topbar'>
+    
+<!--     
+        <button class="button" 
+            onclick="window.location.href = '/upload/';">
+                CLEANING -->
+      </button>
+      </div>
+       {{my_data}}{{index}}
+        <ul>
+            <table class="center">
+                <tr>
+                    {%for i in cols%}
+                    <th>{{i}}</th>
+                    {%endfor%}
+                </tr>
+            {% for i in data_wanted %}
+            
+            {% if i.0 %}
+            <tr class="yes">
+                <td>
+                    {{i.1}}
+                </td>
+            </tr>
+            {% else %}
+            <tr class="no">
+                <td>
+                    {{i.1}}
+                </td>
+            </tr> 
+            {% endif %}            
+            {%endfor%} 
+        
+
+            </table>
+        </ul>
+    </body>
+</html>
